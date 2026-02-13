@@ -64,6 +64,7 @@ body {
   color: var(--default-color);
   background-color: var(--background-color);
   font-family: var(--default-font);
+ 
 }
 
 a {
@@ -186,6 +187,7 @@ h6 {
 }
 
 .header .social-links a {
+ 
   font-size: 16px;
   display: inline-flex;
   align-items: center;
@@ -243,7 +245,7 @@ h6 {
 
 .header .header-toggle:hover {
   color: var(--contrast-color);
-  background-color: color-mix(in srgb, var(--accent-color) 90%, white 15%);
+  background-color: color-mix(in srgb, var(--accent-color) 90%, rgb(70, 68, 68) 15%);
 }
 
 /*--------------------------------------------------------------
@@ -573,6 +575,7 @@ section,
 .hero .container {
   position: relative;
   z-index: 3;
+
     
 }
 
@@ -896,6 +899,7 @@ section,
 --------------------------------------------------------------*/
 .services .service-item {
   position: relative;
+  
 }
 
 .services .service-item .icon {
@@ -1207,12 +1211,15 @@ section,
 # Service Details Section
 --------------------------------------------------------------*/
 .service-details .services-list {
+  
+
   padding: 10px 30px;
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
   margin-bottom: 20px;
 }
 
 .service-details .services-list a {
+  
   display: block;
   line-height: 1;
   padding: 8px 0 8px 15px;
@@ -1274,3 +1281,4 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
