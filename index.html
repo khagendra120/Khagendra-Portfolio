@@ -4,403 +4,549 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Khagendra</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <title>Khagendra Katuwal — QA Engineer</title>
+  <meta name="description" content="Portfolio of Khagendra Katuwal — Quality Assurance Engineer, Accountant, Designer based in Nepal.">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-  <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
+  <!-- Vendor CSS -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Main CSS File -->
+  <!-- Main CSS -->
   <link href="assets/css/main.css" rel="stylesheet">
-<style>
-
-  
-</style>
-
 </head>
 
 <body class="index-page">
-  
+
+  <!-- ── PRELOADER ── -->
+  <div id="preloader">
+    <div class="preloader-inner"></div>
+  </div>
+
+  <!-- ── THEME TOGGLE ── -->
+  <button class="theme-toggle" id="themeToggle" title="Toggle dark/light mode">
+    <span class="icon-dark">🌙</span>
+    <span class="icon-light">☀️</span>
+  </button>
+
+  <!-- ══════════════════════════════════════════
+       SIDEBAR / HEADER
+  ══════════════════════════════════════════ -->
   <header id="header" class="header dark-background d-flex flex-column">
     <i class="header-toggle d-xl-none bi bi-list"></i>
 
+    <!-- Profile Photo -->
     <div class="profile-img">
-      <img src="assets/img/my-profile-img.jpg" alt="" class="img-fluid rounded-circle">
+      <img src="assets/img/my-profile-img.jpg" alt="Khagendra Katuwal" class="img-fluid rounded-circle">
     </div>
 
+    <!-- Name + tagline -->
     <a href="index.html" class="logo d-flex align-items-center justify-content-center">
-      <!-- Uncomment the line below if you also wish to use an image logo -->
-      <!-- <img src="assets/img/logo.png" alt=""> -->
       <h1 class="sitename">Khagendra Katuwal</h1>
     </a>
+    <p class="tagline">QA · Accounting · Design</p>
 
+    <!-- Social Links -->
     <div class="social-links text-center">
-      <a href="https://www.facebook.com/people/Khagendra-Katuwal/61564902225227/" class="facebook" target="_blank"><i class="bi bi-facebook"></i></a>
-      <a href="#" class="instagram"><i class="bi bi-instagram" target="_blank"></i></a>
-      <a href="https://github.com/khagendra120" class="github" target="_blank"><i class="bi bi-github"></i></a>
-      <a href="https://www.linkedin.com/in/khagendra-katuwal-4a4996175/" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
+      <a href="https://www.facebook.com/people/Khagendra-Katuwal/61564902225227/" class="facebook" target="_blank" title="Facebook">
+        <i class="bi bi-facebook"></i>
+      </a>
+      <a href="#" class="instagram" target="_blank" title="Instagram">
+        <i class="bi bi-instagram"></i>
+      </a>
+      <a href="https://github.com/khagendra120" class="github" target="_blank" title="GitHub">
+        <i class="bi bi-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/khagendra-katuwal-4a4996175/" class="linkedin" target="_blank" title="LinkedIn">
+        <i class="bi bi-linkedin"></i>
+      </a>
     </div>
 
+    <div class="divider"></div>
+
+    <!-- Navigation -->
     <nav id="navmenu" class="navmenu">
       <ul>
-        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
-         <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i> Home</a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
         <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
-       
-        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Blog</a></li>
+        <li><a href="#services"><i class="bi bi-journal-text navicon"></i> Blog</a></li>
         <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
       </ul>
     </nav>
 
+    <!-- Sidebar footer -->
+    <div class="header-footer">
+      © 2025 Khagendra Katuwal
+    </div>
   </header>
+  <!-- /Header -->
 
   <main class="main">
 
-    <!-- Hero Section -->
+    <!-- ══════════════════════════════════════════
+         HERO SECTION
+    ══════════════════════════════════════════ -->
     <section id="hero" class="hero section dark-background">
-
-      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in" class="">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-      <div class="Myname">
-  <h2>Khagendra Katuwal</h2>
-</div>
-        <p>I'm a <span class="typed" data-typed-items="Quality Assurance, Accountant, Designer, "></span>
-          <span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
-      </div>
-
-    </section><!-- /Hero Section -->
-
-
-
-    <!-- Resume Section -->
-    <section id="resume" class="resume section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Resume</h2>
-        <p>
-I am a career-oriented professional, having immense experience in management, with over five years of experience in various leadership and operational positions.
-          I earned my Bachelor's in Management from Anarmani Public College with a sound education in business administration. My professional journey has been varied:
-          Branch Manager at Bishal Krishi Sahakari Sanstha, where I developed skills in accounting and financial management, leading a team; moving to Support Manager at Pratham IT System,
-          where my responsibilities included client support, operational improvement, and solving technical problems. Presently, as a Quality Assurance professional, I work toward software reliability,
-          user experience enhancement, and process efficiency.
-          In all of these, my commitment has been toward building up teamwork, smoothing work processes, and measuring effective, efficient results.
-
-
-        </p>
-      </div><!-- End Section Title -->
+      <img src="assets/img/hero-bg.jpg" alt="" class="hero-bg" data-aos="fade-in">
 
       <div class="container">
+        <p class="hero-eyebrow">Based in Nepal · Available for Work</p>
 
-        <div class="row">
+        <h2>
+          Khagendra<br>
+          <span class="outline">Katuwal</span>
+        </h2>
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-      
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4> Bachelor on management </h4>
-              <h5>2017 - 2022</h5>
-              <p><em>Anarmani publice collage</em></p>
-           <p> I completed my Bachelor's degree in Management from Anarmani Public College, where I gained a strong foundation in business principles, leadership, and organizational strategies.</p>
-            </div><!-- Edn Resume Item -->
-
-            <div class="resume-item">
-              <h4>+2 Business management</h4>
-              <h5>2016 - 2017</h5>
-              <p><em>manakamana multiple college</em></p>
-                 <p>My studies focused on areas such as financial management, marketing, and decision-making.</p>
-            </div>
-
-            <div class="resume-item">
-              <h4>SLC</h4>
-              <h5>2015</h5>
-              <p><em>Shree Mahendra Jyoti Secondary School</em></p>
-            </div>
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <h3 class="resume-title">Professional Experience</h3>
-            <div class="resume-item">
-              <h4>pratham it system pvt ltd</h4> 
-              <h5>Quality Assurance</h5>
-              <h5>2025 - Present</h5>
-              <p><em>Kathmandu - 15, Dallu, Kathmandu </em></p>
-
-               <ul>
-                <li>Since 2025, as Quality Assurance at Prathami IT System</a>
-                </li>
-            
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-         
-            <div class="resume-item">
-              <h4>pratham it system pvt ltd</h4> 
-              <h5>Support Manager</h5>
-              <h5>2022 - 2025</h5>
-              <p><em>Kathmandu - 15, Dallu, Kathmandu </em></p>
-              <p>Since 2022, as Support Manager at Prathami IT System, I lead a group
-                resolving client issues, improving assist operations, and leveraging
-                accounting and</p>
-              <ul>
-                <li>Company website <a href=" https://prathamit.com/">website</a>
-                </li>
-                
-              </ul>
-            </div><!-- Edn Resume Item -->
-
-            <div class="resume-item">
-              <h4>Bishal Krishi Sahakai Sanstha LTD
-              </h4>
-              <h5> Branch Manager
-              </h5>
-              <h5>2018 - 2022</h5>
-              <p><em>Birtamod -10 Sainik Bazar</em></p>
-             <p>I worked at Bishal Krishi Sahakari Sanstha in the accounting
-              department for three years before serving as Branch Manager for
-              one year. (2018-2022)</p>
-            </div><!-- Edn Resume Item -->
-
-          </div>
-
+        <div class="typed-wrap">
+          I'm a&nbsp;
+          <span class="typed" data-typed-items="Quality Assurance Engineer, Accountant, Designer, Problem Solver"></span>
+          <span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span>
         </div>
 
+        <div class="hero-cta">
+          <a href="#resume" class="btn-primary-custom">View Resume</a>
+          <a href="#contact" class="btn-outline-custom">Get in Touch</a>
+        </div>
       </div>
 
-    </section><!-- /Resume Section -->
+      <div class="hero-scroll">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+    <!-- /Hero -->
 
 
-      
-    <!-- Stats Section -->
+    <!-- ══════════════════════════════════════════
+         STATS SECTION
+    ══════════════════════════════════════════ -->
     <section id="stats" class="stats section">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-journal-richtext"></i>
-              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Reporting</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-headset"></i>
-              <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Support</p>
-            
-            </div>
-        
-         
-        </div>
-      </div>
-
-    </section><!-- /Stats Section -->
-
-
-    <!-- About Section -->
-    <section id="about" class="about section">
-
-      <!-- Section Title -->
-      
-      <div class="container section-title" data-aos="fade-up">
-        <h2>About</h2>
-        <p>With over five years of experience in the accounting department at Bishal Krishi Sahakari and my current role as
-          a Support Manager at Prathami IT System, I bring a unique blend of financial expertise and IT support skills to
-          the table. My journey in the professional world has equipped me with a deep understanding of financial
-          management, reporting, and compliance, alongside strong capabilities in client support and technical
-          troubleshooting.
-        </p>
-      </div><!-- End Section Title -->
-<div class="skills-wrapper">
-  <h1>My <span>Skills</span></h1>
-
-  <div class="grid">
-    <div class="category">
-      <span class="cat-number">01</span>
-      <p class="cat-title">Frontend</p>
-      <ul class="skill-list">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>Bootstrap</li>
-        <li>JavaScript</li>
-      </ul>
-    </div>
-
-    <div class="category">
-      <span class="cat-number">02</span>
-      <p class="cat-title">Backend</p>
-      <ul class="skill-list">
-        <li>SQL Server</li>
-        <li>PostgreSQL</li>
-      </ul>
-    </div>
-
-    <div class="category">
-      <span class="cat-number">03</span>
-      <p class="cat-title">Other</p>
-      <ul class="skill-list">
-        <li>Figma</li>
-        <li>Canva</li>
-        <li>Microsoft Excel</li>
-        <li>Accounting</li>
-      </ul>
-    </div>
-  </div>
-</div>
-    <!-- Services Section -->
-    <section id="services" class="services section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Blog</h2>
-        
-      </div><!-- End Section Title -->
-
       <div class="container">
-      
-        <div class="row gy-4">
+        <div class="stats-grid" data-aos="fade-up">
 
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon flex-shrink-0"><i class="bi bi-briefcase"></i></div>
-            <div>
-              <h4 class="title"><a href="Theory.html" class="stretched-link"> Blog </a></h4>
-              <p class="description">Develop software and tools to help businesses manage their finances efficiently. Services include budgeting, expense tracking, payroll management, and financial reporting systems tailored to small and medium enterprises (SMEs).</p>
-            </div>
-          </div>
-          <!-- End Service Item -->
-
-
-    </section><!-- /Services Section -->
-
- 
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Get in Touch</h2>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-5">
-
-            <div class="info-wrap">
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
-                <i class="bi bi-geo-alt flex-shrink-0"></i>
-                <div>
-                  <h3>Address</h3>
-                  <p>Birtamode - 10, sainik bazar, Jhapa, Nepal </p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-                <i class="bi bi-telephone flex-shrink-0"></i>
-                <div>
-                  <h3>Call Us</h3>
-                  <p>+977 9824011697</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-                <i class="bi bi-envelope flex-shrink-0"></i>
-                <div>
-                  <h3>Email Us</h3>
-                  <p>khagendrakatuwal8@gmail.com</p>
-                </div>
-              </div><!-- End Info Item -->
-      
-              
-            </div>
+          <div class="stats-item">
+            <i class="bi bi-calendar-check"></i>
+            <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Years Experience</p>
           </div>
 
-          <div class="col-lg-7">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-              <div class="row gy-4">
+          <div class="stats-item">
+            <i class="bi bi-journal-richtext"></i>
+            <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Reports Filed</p>
+          </div>
 
-                <div class="col-md-6">
-                  <label for="name-field" class="pb-2">Your Name</label>
-                  <input type="text" name="name" id="name-field" class="form-control" required="">
-                </div>
-                 <div class="col-md-6">
-                  <label for="email-field" class="pb-2">Your Phone Number</label>
-                  <input type="Number" class="form-control" name="Number" id="email-field" required="">
-                </div>
+          <div class="stats-item">
+            <i class="bi bi-headset"></i>
+            <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Support Tickets</p>
+          </div>
 
-                  <div class="col-md-12">
-                  <label for="subject-field" class="pb-2">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email-field" required="">
-                </div>
+          <div class="stats-item">
+            <i class="bi bi-people"></i>
+            <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Companies</p>
+          </div>
 
-                
+        </div>
+      </div>
+    </section>
+    <!-- /Stats -->
 
-                <div class="col-md-12">
-                  <label for="subject-field" class="pb-2">Subject</label>
-                  <input type="text" class="form-control" name="subject" id="subject-field" required="">
-                </div>
 
-                <div class="col-md-12">
-                  <label for="message-field" class="pb-2">Message</label>
-                  <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
-                </div>
+    <!-- ══════════════════════════════════════════
+         RESUME SECTION
+    ══════════════════════════════════════════ -->
+    <section id="resume" class="resume section">
+      <div class="container">
 
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
+        <!-- Section Title -->
+        <div class="section-title" data-aos="fade-up">
+          <span class="label">Career Path</span>
+          <h2>My <em>Resume</em></h2>
+          <p>
+            A career-oriented professional with over five years of experience across management, finance, and IT operations.
+            From accounting at Bishal Krishi Sahakari to Support Manager and now Quality Assurance at Pratham IT System —
+            each role has deepened my commitment to efficiency, teamwork, and delivering measurable results.
+          </p>
+        </div>
 
-                  <button type="submit">Send Message</button>
-                </div>
+        <!-- Resume Content -->
+        <div class="resume-cols" data-aos="fade-up" data-aos-delay="100">
 
+          <!-- Education -->
+          <div>
+            <h3 class="resume-col-title">
+              <i class="bi bi-mortarboard"></i> Education
+            </h3>
+            <div class="timeline">
+
+              <div class="timeline-item">
+                <span class="tl-period">2017 — 2022</span>
+                <h4>Bachelor of Management</h4>
+                <h5>Anarmani Public College</h5>
+                <p>Strong foundation in business principles, leadership, and organizational strategies including financial management and decision-making frameworks.</p>
               </div>
-            </form>
-          </div><!-- End Contact Form -->
+
+              <div class="timeline-item">
+                <span class="tl-period">2016 — 2017</span>
+                <h4>+2 Business Management</h4>
+                <h5>Manakamana Multiple College</h5>
+                <p>Focused on financial management, marketing fundamentals, and business decision-making.</p>
+              </div>
+
+              <div class="timeline-item">
+                <span class="tl-period">2015</span>
+                <h4>SLC</h4>
+                <h5>Shree Mahendra Jyoti Secondary School</h5>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Experience -->
+          <div>
+            <h3 class="resume-col-title">
+              <i class="bi bi-briefcase"></i> Experience
+            </h3>
+            <div class="timeline">
+
+              <div class="timeline-item">
+                <span class="tl-period">2025 — Present</span>
+                <h4>Quality Assurance Engineer</h4>
+                <h5>Pratham IT System Pvt. Ltd. · Dallu, Kathmandu</h5>
+                <ul>
+                  <li>Ensuring software reliability and quality across products</li>
+                  <li>Enhancing user experience through systematic testing</li>
+                  <li>Driving process efficiency and documentation standards</li>
+                </ul>
+              </div>
+
+              <div class="timeline-item">
+                <span class="tl-period">2022 — 2025</span>
+                <h4>Support Manager</h4>
+                <h5>Pratham IT System Pvt. Ltd. · Dallu, Kathmandu</h5>
+                <p>Led client support operations, resolved technical issues, improved support workflows, and contributed accounting and operational expertise. <a href="https://prathamit.com/" target="_blank">prathamit.com ↗</a></p>
+              </div>
+
+              <div class="timeline-item">
+                <span class="tl-period">2018 — 2022</span>
+                <h4>Branch Manager / Accountant</h4>
+                <h5>Bishal Krishi Sahakari Sanstha Ltd. · Birtamod, Sainik Bazar</h5>
+                <p>Spent three years in the accounting department managing financial records and compliance, then served as Branch Manager leading the branch team for one year.</p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- /Resume -->
+
+
+    <!-- ══════════════════════════════════════════
+         ABOUT SECTION
+    ══════════════════════════════════════════ -->
+    <section id="about" class="about section">
+      <div class="container">
+
+        <!-- Section Title -->
+        <div class="section-title" data-aos="fade-up">
+          <span class="label">Who I Am</span>
+          <h2>About <em>Me</em></h2>
+        </div>
+
+        <div class="about-grid" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="about-text">
+            <p>
+              With over five years of professional experience spanning finance, IT support, and quality assurance,
+              I bring a rare combination of technical precision and business acumen to every role.
+            </p>
+            <p>
+              My journey started in accounting at Bishal Krishi Sahakari Sanstha, where I developed deep skills in
+              financial management, compliance, and team leadership. Moving to Pratham IT System as Support Manager,
+              I bridged the gap between technical teams and clients — solving problems and streamlining operations.
+            </p>
+            <p>
+              Today, as a Quality Assurance professional, I channel all of that experience toward building better software:
+              more reliable, more intuitive, and more efficient.
+            </p>
+
+            <ul class="about-info-list">
+              <li>
+                <i class="bi bi-geo-alt"></i>
+                <span class="info-label">Location</span>
+                <span class="info-value">Birtamode, Jhapa, Nepal</span>
+              </li>
+              <li>
+                <i class="bi bi-telephone"></i>
+                <span class="info-label">Phone</span>
+                <span class="info-value">+977 9824011697</span>
+              </li>
+              <li>
+                <i class="bi bi-envelope"></i>
+                <span class="info-label">Email</span>
+                <span class="info-value">khagendrakatuwal8@gmail.com</span>
+              </li>
+              <li>
+                <i class="bi bi-globe"></i>
+                <span class="info-label">Available</span>
+                <span class="info-value">Open to new opportunities</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Right column image placeholder / accent block -->
+          <div data-aos="fade-left" data-aos-delay="200" style="position:relative;">
+            <div style="
+              background: var(--bg-alt);
+              border: 1px solid var(--border);
+              padding: 48px 40px;
+              height: 100%;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              gap: 24px;
+            ">
+              <div style="display:flex; align-items:center; gap:16px; padding-bottom:20px; border-bottom:1px solid var(--border);">
+                <div style="font-size:36px; color:var(--accent);">🎯</div>
+                <div>
+                  <div style="font-family:var(--mono-font); font-size:10px; letter-spacing:0.2em; text-transform:uppercase; color:var(--text-muted);">Current Role</div>
+                  <div style="font-family:var(--heading-font); font-size:18px; font-weight:700; color:var(--heading);">QA Engineer</div>
+                </div>
+              </div>
+              <div style="display:flex; align-items:center; gap:16px; padding-bottom:20px; border-bottom:1px solid var(--border);">
+                <div style="font-size:36px; color:var(--accent);">📊</div>
+                <div>
+                  <div style="font-family:var(--mono-font); font-size:10px; letter-spacing:0.2em; text-transform:uppercase; color:var(--text-muted);">Background</div>
+                  <div style="font-family:var(--heading-font); font-size:18px; font-weight:700; color:var(--heading);">Finance + IT</div>
+                </div>
+              </div>
+              <div style="display:flex; align-items:center; gap:16px;">
+                <div style="font-size:36px; color:var(--accent);">🇳🇵</div>
+                <div>
+                  <div style="font-family:var(--mono-font); font-size:10px; letter-spacing:0.2em; text-transform:uppercase; color:var(--text-muted);">Based In</div>
+                  <div style="font-family:var(--heading-font); font-size:18px; font-weight:700; color:var(--heading);">Nepal</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Skills -->
+        <div class="skills-section" data-aos="fade-up">
+          <h2 class="skills-heading">My <em>Skills</em></h2>
+
+          <div class="skills-grid">
+
+            <div class="skill-cat">
+              <span class="cat-num">01</span>
+              <p class="cat-name">Frontend</p>
+              <ul class="skill-tag-list">
+                <li>HTML5</li>
+                <li>CSS3 / Bootstrap</li>
+                <li>JavaScript</li>
+                <li>Responsive Design</li>
+              </ul>
+            </div>
+
+            <div class="skill-cat">
+              <span class="cat-num">02</span>
+              <p class="cat-name">Backend & Data</p>
+              <ul class="skill-tag-list">
+                <li>SQL Server</li>
+                <li>PostgreSQL</li>
+                <li>Database Reporting</li>
+              </ul>
+            </div>
+
+            <div class="skill-cat">
+              <span class="cat-num">03</span>
+              <p class="cat-name">Tools & Other</p>
+              <ul class="skill-tag-list">
+                <li>Figma / Canva</li>
+                <li>Microsoft Excel</li>
+                <li>Accounting & Finance</li>
+                <li>QA Testing</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- /About -->
+
+
+    <!-- ══════════════════════════════════════════
+         BLOG SECTION
+    ══════════════════════════════════════════ -->
+    <section id="services" class="services section">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <span class="label">Thoughts & Writing</span>
+          <h2>My <em>Blog</em></h2>
+          <p>Sharing insights on technology, finance, and quality assurance from my professional journey.</p>
+        </div>
+
+        <div class="blog-grid" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="blog-card">
+            <div class="blog-icon"><i class="bi bi-shield-check"></i></div>
+            <h4><a href="Theory.html">Quality Assurance in Modern Software</a></h4>
+            <p>Exploring how QA practices evolve with agile development — from manual testing to automated pipelines and the mindset shift that makes it all work.</p>
+            <a href="Theory.html" class="read-more">Read Article</a>
+          </div>
+
+          <div class="blog-card">
+            <div class="blog-icon"><i class="bi bi-currency-dollar"></i></div>
+            <h4><a href="#">Finance Meets Technology</a></h4>
+            <p>How financial management tools are transforming SMEs in Nepal — budgeting systems, expense tracking, and the road to digital accounting.</p>
+            <a href="#" class="read-more">Coming Soon</a>
+          </div>
+
+          <div class="blog-card">
+            <div class="blog-icon"><i class="bi bi-people"></i></div>
+            <h4><a href="#">Leading Support Teams Effectively</a></h4>
+            <p>Lessons from three years managing IT support — how to build empathy-driven systems that resolve issues faster and retain clients longer.</p>
+            <a href="#" class="read-more">Coming Soon</a>
+          </div>
 
         </div>
 
       </div>
-    </section><!-- /Contact Section -->
+    </section>
+    <!-- /Blog -->
+
+
+    <!-- ══════════════════════════════════════════
+         CONTACT SECTION
+    ══════════════════════════════════════════ -->
+    <section id="contact" class="contact section">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <span class="label">Let's Connect</span>
+          <h2>Get in <em>Touch</em></h2>
+          <p>Have a project in mind or just want to say hello? I'd love to hear from you.</p>
+        </div>
+
+        <div class="contact-grid" data-aos="fade-up" data-aos-delay="100">
+
+          <!-- Info -->
+          <div class="contact-info-card">
+            <div class="contact-info-item">
+              <div class="ci-icon"><i class="bi bi-geo-alt"></i></div>
+              <div>
+                <h3>Address</h3>
+                <p>Birtamode - 10, Sainik Bazar<br>Jhapa, Nepal</p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="ci-icon"><i class="bi bi-telephone"></i></div>
+              <div>
+                <h3>Phone</h3>
+                <p>+977 9824011697</p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="ci-icon"><i class="bi bi-envelope"></i></div>
+              <div>
+                <h3>Email</h3>
+                <p>khagendrakatuwal8@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="ci-icon"><i class="bi bi-linkedin"></i></div>
+              <div>
+                <h3>LinkedIn</h3>
+                <p><a href="https://www.linkedin.com/in/khagendra-katuwal-4a4996175/" target="_blank">View Profile ↗</a></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Form -->
+          <div class="contact-form-wrap">
+            <form action="forms/contact.php" method="post" class="php-email-form">
+
+              <div class="form-row">
+                <div>
+                  <label class="form-label" for="name-field">Your Name</label>
+                  <input type="text" name="name" id="name-field" class="form-control" placeholder="John Doe" required>
+                </div>
+                <div>
+                  <label class="form-label" for="phone-field">Phone Number</label>
+                  <input type="tel" name="phone" id="phone-field" class="form-control" placeholder="+977 ...">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="email-field">Email Address</label>
+                <input type="email" name="email" id="email-field" class="form-control" placeholder="you@example.com" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="subject-field">Subject</label>
+                <input type="text" name="subject" id="subject-field" class="form-control" placeholder="What's this about?" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="message-field">Message</label>
+                <textarea name="message" id="message-field" class="form-control" rows="6" placeholder="Tell me about your project or question..." required></textarea>
+              </div>
+
+              <div class="text-center">
+                <div class="loading">Sending…</div>
+                <div class="error-message"></div>
+                <div class="sent-message">✓ Your message has been sent. Thank you!</div>
+                <button type="submit" class="btn-submit">
+                  <i class="bi bi-send"></i> Send Message
+                </button>
+              </div>
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- /Contact -->
 
   </main>
 
-  <footer id="footer" class="footer position-relative light-background">
-
+  <!-- ── FOOTER ── -->
+  <footer id="footer" class="footer">
     <div class="container">
-      <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">Khagendra-Katuwal</strong> <span>All Rights Reserved</span></p>
-      </div>
-     
+      <p>© 2025 <span>Khagendra Katuwal</span> · All Rights Reserved · Built with ♥ in Nepal</p>
     </div>
-
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
 
-  <!-- Preloader -->
-  <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
+  <!-- Vendor JS -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
@@ -408,13 +554,34 @@ I am a career-oriented professional, having immense experience in management, wi
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
-</body>
+  <!-- Theme Toggle Script -->
+  <script>
+    const themeBtn = document.getElementById('themeToggle');
+    const body = document.body;
 
+    // Load saved preference
+    if (localStorage.getItem('theme') === 'dark') {
+      body.classList.add('dark-mode');
+    }
+
+    themeBtn.addEventListener('click', () => {
+      body.classList.toggle('dark-mode');
+      localStorage.setItem('theme', body.classList.contains('dark-mode') ? 'dark' : 'light');
+    });
+
+    // Preloader
+    window.addEventListener('load', () => {
+      const preloader = document.getElementById('preloader');
+      setTimeout(() => {
+        preloader.style.opacity = '0';
+        setTimeout(() => preloader.remove(), 500);
+      }, 500);
+    });
+  </script>
+
+</body>
 </html>
