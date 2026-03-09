@@ -1349,6 +1349,7 @@ section,
   .category:hover { background: #161616; }
   .category:hover::before { transform: scaleX(1); }
 
+<<<<<<< HEAD
   .category:nth-child(1) { --accent: #ff5533; }/*--------------------------------------------------------------
 # Font & Color Variables
 --------------------------------------------------------------*/
@@ -2345,6 +2346,9 @@ section, .section {
   section, .section { padding: 60px 0; }
   .section-title h2 { font-size: 32px; }
 }
+=======
+  .category:nth-child(1) { --accent: #ff5533; }
+>>>>>>> e47335ed711f87fc8e851f63ad79b77a31b8c168
   .category:nth-child(2) { --accent: #33aaff; }
   .category:nth-child(3) { --accent: #aaff33; }
 
@@ -2409,4 +2413,8 @@ section, .section {
 
   @media (max-width: 640px) {
     .grid { grid-template-columns: 1fr; }
+<<<<<<< HEAD
   }
+=======
+  }
+>>>>>>> e47335ed711f87fc8e851f63ad79b77a31b8c168
